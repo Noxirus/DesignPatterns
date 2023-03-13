@@ -31,9 +31,55 @@ public class LinkedList {
     }
 
     //deleteFirst
+    public void deleteFirst(){
+        if(first.getNext() == null){
+            last = null;
+        }
+        first = first.getNext();
+    }
     //deleteLast
+    public void deleteLast(){
+        Node currentNode = first;
+        Node previousNode = null;
+        while(currentNode != null){
+            if(currentNode.getNext() == null){
+                System.out.println("Current: " + currentNode.getValue() + " / Previous: " + previousNode.getValue());
+                last = previousNode;
+                last.setNext(null);
+                return;
+            }
+            else{
+                previousNode = currentNode;
+                currentNode = currentNode.getNext();
+            }
+        }
+    }
     //contains
+    public boolean contains(int value){
+        Node currentNode = first;
+        while(currentNode != null){
+            if(currentNode.getValue() == value){
+                return true;
+            }
+            currentNode = currentNode.getNext();
+        }
+
+        return false;
+    }
     //indexOf
+    public int indexOf(int index){
+        Node currentNode = first;
+        int currentIndex = 0;
+        while(currentNode != null){
+            if(currentIndex == index){
+                return currentNode.getValue();
+            }
+            currentIndex++;
+            currentNode = currentNode.getNext();
+        }
+
+        return -1;
+    }
 
     public String returnList(){
         StringBuilder string = new StringBuilder();
