@@ -20,6 +20,9 @@ public class CompositeCommand implements Command {
     }
 }
 
+//Essentially allows us to add commands to a composite and execute them, regardless of what the commands do
+//We can also use the memento pattern to store the commands and their undo functionality if we want to undo commands in a stack order
+
 /*
         var composite = new CompositeCommand();
         composite.add(new ResizeCommand());

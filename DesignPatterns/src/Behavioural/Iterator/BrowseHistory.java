@@ -46,6 +46,10 @@ public class BrowseHistory {
     }
 }
 
+//A class can contain an iterator to handle the logic of iterating through contents as specified, without needing to change the implementation from outside
+// Example, if we change the content to a different collection, we would need to change how we iterate through it, but with this implementation we can leave the hasNext, etc in place
+// And then just change how the next item is retrieved
+
 /*
  var history = new BrowseHistory();
        history.push("a");

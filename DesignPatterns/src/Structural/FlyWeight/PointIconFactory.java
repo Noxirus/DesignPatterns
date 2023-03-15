@@ -15,3 +15,7 @@ public class PointIconFactory {
             return icons.get(type);
     }
 }
+
+//We can store points in a hashmap here
+//When we need to reference one we can create it and assign it to the map
+//Therefore we do not need to create unnecessary amounts of object and only create them when needed

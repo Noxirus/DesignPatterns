@@ -8,6 +8,8 @@ public class CloudStream implements Stream{
 
 
 }
+    // With this we can overload a function to pass in multiple "decorators" with various functionality on the object to be created
+    // This was we can chain functionality onto an object
 
     /*
     public static void main(String[] args) {

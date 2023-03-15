@@ -21,6 +21,7 @@ public class ConfigManager {
         return settings.get(key);
     }
 }
+// There are times where we only ever want one of an object, this is that case
 
         /*
         ConfigManager manager = ConfigManager.getInstance();

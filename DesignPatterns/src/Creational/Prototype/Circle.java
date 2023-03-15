@@ -23,3 +23,7 @@ public class Circle implements Component{
         this.radius = radius;
     }
 }
+
+// With this implementation we can add as many objects as we want
+// But objects will be created with the same component logic added to them, but we can add any additional logic beyond that (get radius, etc)
+// But they will need to be rendered out the same or cloned

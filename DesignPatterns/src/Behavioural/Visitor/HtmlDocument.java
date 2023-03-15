@@ -16,6 +16,11 @@ public class HtmlDocument {
         }
     }
 }
+// The document may not always want to know what logic we are adding to it
+// With this we can create an HTML document and then execute operations on it without the document needing to know what the operation is
+// This way we can keep the document separated from the operations being run on it
+// Document does not need to change
+// Operations are "visiting" the document
 
         /*
         var document = new HtmlDocument();

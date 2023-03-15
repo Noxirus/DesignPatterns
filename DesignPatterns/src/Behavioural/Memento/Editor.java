@@ -18,3 +18,6 @@ public class Editor {
         this.content = content;
     }
 }
+
+//The originator creates state versions of itself as memento's, it then passes these memento's to the history as a stack
+//This way at any time we can "undo" states, or revert back to a state in the past

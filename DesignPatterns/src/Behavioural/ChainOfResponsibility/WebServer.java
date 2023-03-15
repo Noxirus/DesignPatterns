@@ -12,6 +12,9 @@ public class WebServer {
     }
 }
 
+//Essentially a linked list of tasks, tasks inherit from the same abstract functionality of handler to check and call the next task
+//This allows us to link and change the order of tasks without needing to change anything about their functionality
+
         /*
         var compressor = new Compressor(null);
         var logger = new Logger(compressor);
