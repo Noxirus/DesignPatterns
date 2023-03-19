@@ -175,7 +175,7 @@ public class LinkedList {
         return size;
     }
 
-    private boolean isEmpty(){
+    public boolean isEmpty(){
         return first == null;
     }
 }
