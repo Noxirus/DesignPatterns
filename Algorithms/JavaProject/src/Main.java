@@ -1,15 +1,20 @@
-import LinkedList.LinkedList;
+import Stack.Stack;
 
 public class Main {
     public static void main(String[] args) {
-        LinkedList list = new LinkedList();
-        list.addLast(10);
-        list.addLast(20);
-        list.addLast(30);
-        list.addLast(40);
-        list.addLast(50);
+        Stack testStack = new Stack();
 
-        System.out.println(list.returnList());
-        System.out.println(list.getKthFromTheEnd(0));
+        testStack.push(1);
+        testStack.push(2);
+        testStack.push(3);
+        testStack.push(4);
+        testStack.push(5);
+
+        testStack.pop();
+        testStack.pop();
+        testStack.pop();
+        testStack.pop();
+
+        System.out.println(testStack.peek());
     }
 }
