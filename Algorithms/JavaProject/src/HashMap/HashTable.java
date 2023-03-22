@@ -27,7 +27,7 @@ public class HashTable {
             entry.value = value;
             return;
         }
-        
+
         getOrCreateBucket(key).add(new Entry(key, value));
     }
 
