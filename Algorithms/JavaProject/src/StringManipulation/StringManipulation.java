@@ -40,6 +40,8 @@ public class StringManipulation {
     }
 
     public String removeDuplicates(String string){
+        if(string == null) return null;
+
         HashSet<Character> uniqueSet = new HashSet<Character>();
         StringBuilder builder = new StringBuilder();
 
